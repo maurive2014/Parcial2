@@ -1,14 +1,15 @@
-<div class="col-5">
-  <div *ngIf="selected">
-    <app-receta-detail [receta]="selectedReceta"></app-receta-detail>
-  </div>
-</div>
 
-<div class="container-fluid m-5">
+<div class="container m-6">
+  <div class="col-5">
+    <div *ngIf="selected">
+      <app-receta-detail [receta]="selectedReceta"></app-receta-detail>
+    </div>
+  </div>
+  <hr />
   <p>**la calificación promedio es  de {{opinionesred}} con un registro de {{opiniones}} opiniones **</p>
   <div class="row">
     <div *ngFor="let receta of recetas" class="col-4">
-      <div class="card p-2" style="width: 15rem; height: 33rem" (click)="onSelected(receta)">
+      <div class="card p-2" style="width: 20rem; height: 25rem" (click)="onSelected(receta)">
         <h5 class="card-title">{{ receta.nombre }}</h5>
         <img
           class="card-img-top"

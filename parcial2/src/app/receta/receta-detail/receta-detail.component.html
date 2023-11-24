@@ -1,29 +1,24 @@
 <div class="container-fluid">
   <p class="h3 p-3">{{ receta.nombre }}</p>
   <div class="row">
-    <div class="col-2">
-      <div class="thumb">
+    <div class="col-7">
         <img
           class="img-fluid"
           src="{{ receta.imagen }}"
           alt="{{ receta.nombre }}"
         />
-      </div>
       <p>Estrellas {{receta.estrellas}} | Cantidad opiniones: {{receta.cantidadOpiniones}}</p>
     </div>
-    <div class="col">
+    <div class="col-5">
       <dl>
         <dt>Descripción</dt>
         <dd>{{receta.cantidadOpiniones}}</dd>
         <dt>Ingredientes</dt>
         <dd>{{ receta.ingredientes }}</dd>
-        <hr />
         <dt>Autor de la receta</dt>
         <dd>{{ receta.autorReceta }}</dd>
-        <hr />
-        <dt>Más infor</dt>
+        <dt>Más información</dt>
         <dd>Dificultad {{ receta.dificultad }} | Duración: {{receta.duracion}}</dd>
-        <hr />
 
       </dl>
     </div>
